@@ -1,0 +1,155 @@
+body {
+    background: url(https://images.pexels.com/photos/255437/pexels-photo-255437.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat fixed top center;
+    padding: 0%;
+    margin: 0%;
+    -webkit-background-size: 100% 100%;
+     -moz-background-size: 75% 100%;
+     background-size: 100% 100%;
+     -o-background-size: 75% 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background-color: black;*/
+    color: black;
+  }
+  
+  .muzieknootjes {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 50%;
+    min-width: 300px;
+    height: 200px;
+    border: 0px solid #000;
+  }
+  
+  .noot-1,
+  .noot-2,
+  .noot-3,
+  .noot-4 {
+    position: absolute;
+    animation: notes 2s infinite linear;
+    font-size: 35px;
+    opacity: 0;
+  }
+  
+  .noot-1 {
+    top: 60px;
+    left: 0;
+    animation-delay: 0.5s;
+  }
+  
+  .noot-2 {
+    top: 30px;
+    left: 30%;
+    animation-delay: 1s;
+  }
+  
+  .noot-3 {
+    top: 90px;
+    left: 60%;
+    animation-delay: 1.5s;
+  }
+  
+  .noot-4 {
+    top: 40px;
+    left: 90%;
+    animation-delay: 2s;
+  }
+  
+  @keyframes notes {
+    0% {
+      transform: scale(1) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.5) translate(50%, -50%);
+    }
+    80% {
+      opacity: 0;
+      transform: scale(1.5) translate(100%, -100%);
+    }
+    100% {
+      transform: scale(1.5) translate(100%, -100%);
+      opacity: 0;
+    }
+  }
+
+h1 {
+    font-family: 'Sail', cursive;
+    color: black;
+    font-size: 50px;
+    margin-bottom: 60%;
+    margin-left: 50px;
+}
+
+
+nav {
+font-family: 'Sail', cursive;
+color: black;
+margin-bottom: 40%;
+margin-right: 40%;
+font-size: 20px;
+}
+
+.button{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(218, 170, 13);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  width: 75px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+section {
+    font-family: 'Sail', cursive;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-right: 10px;
+    }
+.linkColor {
+    color: black;
+}
+a:visited {
+    color: rgba(121, 38, 6, 0.945);
+}
+    
+
+
+
